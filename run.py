@@ -5,8 +5,6 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-message = """"""
-
 def main():
     (code, name) = get_country()
     send_email(code, name)
@@ -49,8 +47,6 @@ def send_email(code, name):
 
 def get_body(code, name):
     return MIMEText("""Country Club!
-
-Test email, ignore
 
 The country of the week is: %s
 The Wikipedia page is: https://en.wikipedia.org/wiki/%s
