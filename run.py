@@ -12,8 +12,11 @@ def main():
 
     # Pick a random one
     chosen = random.choice(undone)
+    chosen_split = chosen.split("|")
+    chosen_code = chosen_split[0]
+    chosen_name = chosen_split[1]
 
-    print("Chosen " + chosen)
+    print("Chosen " + chosen_code + " - " + chosen_name)
 
 def read_list(path):
     with open(path, 'r') as f:
